@@ -1,0 +1,519 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'open sans';
+}
+
+.index {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    background: #f2f2f2;
+}
+
+.titulo {
+    color: #642a73;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+    margin-block: 20px;
+}
+
+header {
+    width: 100%;
+    height: 600px;
+    background: #e64545;
+    background: -webkit-linear-gradient(to right, #45a24788, #283c8696),url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyIxm2xOQ1cEISfgILAgGvjsL-JT1Qb2d3Uw&usqp=CAU);
+    background: linear-gradient(to right, #45a24788, #283c8696),url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyIxm2xOQ1cEISfgILAgGvjsL-JT1Qb2d3Uw&usqp=CAU);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+nav {
+    text-align: center;
+    padding: 30px 50px 0 0; 
+}
+
+    nav a {
+        width: 100%;
+        color: white;
+        font-weight: 300;
+        text-decoration: none;
+        margin-right: 10px;
+    }
+    nav ul li a {
+        font-size: 20px;
+        display: block;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        font-weight: bold;
+        color: white;
+        text-decoration: none;
+    }
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+
+h1 {
+    padding: 20px;
+    color: darkred;
+}
+
+    header .titulo-header h1 {
+        position: fixed;
+    }
+
+header .textos-header {
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header h1 {
+    font-size: 50px;
+    color: white;
+}
+
+.textos-header h2 {
+    font-size: 30px;
+    font-weight: 300;
+    color: white;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/*Quienes somos*/
+
+.quienes-somos {
+    display: flex;
+    justify-content: space-evenly;
+    background: #f2f2f2;
+}
+
+.img-quienes-somos {
+    width: 30%;
+}
+
+.quienes-somos .textos {
+    width: 40%;
+}
+
+.textos h3 {
+    margin-bottom: 15px;
+}
+
+    .textos h3 span {
+        background: #283c8696;
+        color: white;
+        border-radius: 50%;
+        display: inline-block;
+        text-align: center;
+        width: 30px;
+        height: 30px;
+        padding: 2px;
+        box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+        margin-right: 5px;
+    }
+
+.textos p {
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+/*EXTRAS*/
+.conteiner-extras {
+    background: #f2f2f2;
+}
+
+.galeria {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.img-extras {
+    width: 24%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+    .img-extras > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+.hover-galeria {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: #243c4691;
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+    .hover-galeria img {
+        width: 50px;
+    }
+
+    .hover-galeria p {
+        color: white;
+    }
+
+.img-extras:hover .hover-galeria {
+    transform: scale(1);
+}
+
+/*Clientes*/
+.cursosE {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+    .cursosE .cursoE {
+        background: #f42626;
+        display: flex;
+        width: 46%;
+        height: 200px;
+        align-items: center;
+        justify-content: space-evenly;
+        border-radius: 5px;
+        box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+    }
+
+        .cursosE .cursoE img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border: 3px solid #fff;
+            border-radius: 50%;
+            display: block;
+        }
+
+        .cursosE .cursoE > .contenido-cursoE {
+            width: 60%;
+            color: white;
+        }
+
+            .cursosE .cursoE > .contenido-cursoE p {
+                font-weight: 300;
+                padding-top: 5px;
+            }
+
+/*Cursos Esbas*/
+.conteiner-cursos-esbas {
+    background: #f2f2f2;
+    padding-bottom: 30px;
+}
+
+.conteiner-cursos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cursos {
+    width: 50%;
+    text-align: center;
+}
+
+    .cursos img {
+        width: 90%;
+    }
+
+    .cursos h3 {
+        margin: 10px 0;
+    }
+
+    .cursos p {
+        font-weight: 300;
+    }
+
+/*inscribete*/
+
+.form .button, .form .message, .customSelect, .form .select, .form .textarea, .form .text-input, .form .option-input + label, .form .checkbox-input + label, .form .label {
+    padding: 0.75em 1em;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    line-height: normal;
+    border-radius: 0;
+    border: none;
+    background: none;
+    display: block;
+}
+
+.form .label {
+    font-weight: bold;
+    color: white;
+    padding-top: 0;
+    padding-left: 0;
+    letter-spacing: 0.025em;
+    font-size: 1.125em;
+    line-height: 1.25;
+    position: relative;
+    z-index: 100;
+}
+
+.required .form .label:after, .form .required .label:after {
+    content: " *";
+    color: white;
+    font-weight: normal;
+    font-size: 0.75em;
+    vertical-align: top;
+}
+
+.customSelect, .form .select, .form .textarea, .form .text-input, .form .option-input + label, .form .checkbox-input + label {
+    font: inherit;
+    line-height: normal;
+    width: 100%;
+    box-sizing: border-box;
+    background: darkred;
+    color: white;
+    position: relative;
+}
+
+    .customSelect:-webkit-autofill, .form .select:-webkit-autofill, .form .textarea:-webkit-autofill, .form .text-input:-webkit-autofill, .form .option-input + label:-webkit-autofill, .form .checkbox-input + label:-webkit-autofill {
+        box-shadow: 0 0 0px 1000px #111111 inset;
+        -webkit-text-fill-color: white;
+        border-top-color: #111111;
+        border-left-color: #111111;
+        border-right-color: #111111;
+    }
+
+    .customSelect:not(:focus):not(:active).error, .form .select:not(:focus):not(:active).error, .form .textarea:not(:focus):not(:active).error, .form .text-input:not(:focus):not(:active).error, .form .option-input + label:not(:focus):not(:active).error, .form .checkbox-input + label:not(:focus):not(:active).error, .error .customSelect:not(:focus):not(:active), .error .form .select:not(:focus):not(:active), .form .error .select:not(:focus):not(:active), .error .form .textarea:not(:focus):not(:active), .form .error .textarea:not(:focus):not(:active), .error .form .text-input:not(:focus):not(:active), .form .error .text-input:not(:focus):not(:active), .error .form .option-input + label:not(:focus):not(:active), .form .error .option-input + label:not(:focus):not(:active), .error .form .checkbox-input + label:not(:focus):not(:active), .form .error .checkbox-input + label:not(:focus):not(:active) {
+        background-size: 8px 8px;
+        background-image: linear-gradient(135deg, rgba(232, 71, 76, 0.5), rgba(232, 71, 76, 0.5) 25%, transparent 25%, transparent 50%, rgba(232, 71, 76, 0.5) 50%, rgba(232, 71, 76, 0.5) 75%, transparent 75%, transparent);
+        background-repeat: repeat;
+    }
+
+.form h2 {
+    margin-left: 42%;
+}
+
+.form:not(.has-magic-focus) .customSelect.customSelectFocus, .form:not(.has-magic-focus) .customSelect:active, .form:not(.has-magic-focus) .select:active, .form:not(.has-magic-focus) .textarea:active, .form:not(.has-magic-focus) .text-input:active, .form:not(.has-magic-focus) .option-input + label:active, .form:not(.has-magic-focus) .checkbox-input + label:active, .form:not(.has-magic-focus) .customSelect:focus, .form:not(.has-magic-focus) .select:focus, .form:not(.has-magic-focus) .textarea:focus, .form:not(.has-magic-focus) .text-input:focus, .form:not(.has-magic-focus) .option-input + label:focus, .form:not(.has-magic-focus) .checkbox-input + label:focus {
+    background: #111111;
+}
+
+.form .message {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 100;
+    font-size: 0.625em;
+    color: white;
+}
+
+.form .option-input, .form .checkbox-input {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+    .form .option-input + label, .form .checkbox-input + label {
+        display: inline-block;
+        width: auto;
+        color: #45a24788;
+        position: relative;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        cursor: pointer;
+    }
+
+    .form .option-input:focus + label, .form .checkbox-input:focus + label, .form .option-input:active + label, .form .checkbox-input:active + label {
+        color: #4E4E4E;
+    }
+
+    .form .option-input:checked + label, .form .checkbox-input:checked + label {
+        color: white;
+    }
+
+.form .button {
+    font: inherit;
+    line-height: normal;
+    cursor: pointer;
+    background: darkred;
+    color: white;
+    font-weight: bold;
+    width: auto;
+    margin-left: 90%;
+    font-weight: bold;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+    .form .button:hover, .form .button:focus, .form .button:active {
+        color: white;
+        border-color: white;
+    }
+
+    .form .button:active {
+        position: relative;
+        top: 1px;
+        left: 1px;
+    }
+
+.form {
+    max-width: 100em;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    border: 2px solid #111111;
+    background-color: #f88429;
+    padding: 4px;
+}
+
+    .form .field {
+        width: 100%;
+        margin: 0 0 1.5em 0;
+    }
+
+@media screen and (min-width: 40em) {
+    .form .field.half {
+        width: calc(50% - 1px);
+    }
+}
+
+.form .field.last {
+    margin-left: auto;
+}
+
+.form .textarea {
+    max-width: 100%;
+}
+
+.form .select {
+    text-indent: 0.01px;
+    text-overflow: "" !important;
+}
+
+    .form .select::-ms-expand {
+        display: none;
+    }
+
+.form .checkboxes, .form .options {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.form .checkbox, .form .option {
+    float: left;
+    margin: 1px;
+}
+
+.customSelect {
+    pointer-events: none;
+}
+
+    .customSelect:after {
+        content: "";
+        pointer-events: none;
+        width: 0.5em;
+        height: 0.5em;
+        border-style: solid;
+        border-color: white;
+        border-width: 0 3px 3px 0;
+        position: absolute;
+        top: 50%;
+        margin-top: -0.625em;
+        right: 1em;
+        transform-origin: 0 0;
+        transform: rotate(45deg);
+    }
+
+    .customSelect.customSelectFocus:after {
+        border-color: white;
+    }
+
+.magic-focus {
+    position: absolute;
+    z-index: 0;
+    width: 0;
+    pointer-events: none;
+    background: rgba(255, 255, 255, 0.15);
+    transition: top 0.2s, left 0.2s, width 0.2s;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    will-change: top, left, width;
+    transform-origin: 0 0;
+}
+
+/*Footer*/
+
+footer {
+    background: #bd0404;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.conteiner-contactanos {
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid white;
+}
+
+.contactanos {
+    text-align: center;
+}
+
+    .contactanos h4 {
+        color: white;
+        border-bottom: 3px solid #111111;
+        padding-bottom: 5px;
+        margin-bottom: 20px;
+    }
+
+    .contactanos p {
+        color: white;
+    }
+
+.titulo-final {
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: white;
+}
